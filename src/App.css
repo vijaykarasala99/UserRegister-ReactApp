@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .register form {
+    width: 400px; /* Adjust as needed */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Adjust the gap between label-input pairs */
   }
-  to {
-    transform: rotate(360deg);
+  
+  .register form div {
+    margin-bottom: 10px;
   }
-}
+  
+  .register form label {
+    font-weight: bold;
+  }
+  
+  .register form input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .register form button {
+    grid-column: span 2; /* Make the button span across both columns */
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .register form button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .register label{
+    font-size: 2rem;
+  }
+  
